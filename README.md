@@ -3,9 +3,9 @@
 
 ---
 
-##  Repo Structure
+## Repo Structure
 
-```mermaid
+```text
 bsn-labs/
 │
 ├── lab1-bipolar-nrz/
@@ -105,8 +105,8 @@ flowchart LR
     Cos["cos(2πf₀t)"]
     Sin["-sin(2πf₀t)"]
 
-    %% Adder & Output
-    Sum Node((("+")))
+    %% Adder & Output (Fixed: No spaces in Node ID!)
+    SumNode((("+")))
     Out(["s(t) <br> (Passband Signal)"])
 
     %% Connections
@@ -116,14 +116,14 @@ flowchart LR
     SQ --> MixQ
     Sin --> MixQ
 
-    MixI --> Sum Node
-    MixQ --> Sum Node
-    Sum Node --> Out
+    MixI --> SumNode
+    MixQ --> SumNode
+    SumNode --> Out
 
     %% Styling
     style MixI fill:#111827,stroke:#38bdf8,stroke-width:1px
     style MixQ fill:#111827,stroke:#38bdf8,stroke-width:1px
-    style Sum Node fill:#1f2937,stroke:#34d399,stroke-width:2px
+    style SumNode fill:#1f2937,stroke:#34d399,stroke-width:2px
 ```
 
 **IQ Demodulator (Receiver — passband → baseband):**
