@@ -1,0 +1,21 @@
+# GNU Radio — auto-generated files (don't commit these)
+*.py
+*.pyc
+__pycache__/
+
+# GNU Radio backups
+*.grc.bak
+
+# Large signal recordings (if any)
+*.bin
+*.dat
+*.wav
+*.sigmf-data
+
+# Jupyter (lab 3)
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
