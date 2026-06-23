@@ -5,7 +5,7 @@
 
 ##  Repo Structure
 
-```
+```mermaid
 bsn-labs/
 │
 ├── lab1-bipolar-nrz/
